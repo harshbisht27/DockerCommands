@@ -1,0 +1,9 @@
+version: '3'
+services:
+  email-submit-app:
+    image: email-submit-app
+    ports:
+      - "9000:9000"
+    volumes:
+      - /Users/harshbisht/Desktop/email/emails.txt:/app/emails.txt
+    restart: unless-stopped
